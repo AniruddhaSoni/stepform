@@ -9,7 +9,6 @@ export default function Header() {
         <img src="./logo.png" alt="" /> <span className="heading">Eden</span>
       </header>
       <div className="steps">
-        <div className={"progressLine step" + step}></div>
         <div
           className={step >= 1 ? "step stepOne done" : "step stepOne"}
           onClick={() => {
@@ -41,6 +40,14 @@ export default function Header() {
           }}
         >
           4
+        </div>
+        <div
+          className={step >= 5 ? "step stepFive done" : "step stepFive"}
+          onClick={() => {
+            setStep(5);
+          }}
+        >
+          5
         </div>
       </div>
     </>

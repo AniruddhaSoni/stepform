@@ -8,16 +8,17 @@ export default function Footer() {
       <button
         className="createWorkspace"
         onClick={() => {
-          if (step === 4) {
-            setStep(1);
-            alert("Workspace created successfully!");
-            document.location.reload();
+          if (step === 5) {
+            // setStep(1);
+            // <Link to={"/submission"} />;
+            console.log(step);
           } else {
             setStep(step + 1);
           }
         }}
+        type={step === 5 ? "submit" : "button"}
       >
-        Create Workspace
+        {step === 5 ? "Submit" : "Next"}
       </button>
     </footer>
   );

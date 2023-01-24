@@ -44,7 +44,7 @@ export default function Form() {
       !js ||
       !checkbox
     ) {
-      console.log("fill all data");
+      alert("fill all data");
     } else {
       let file = e.target.file.files[0].name;
 

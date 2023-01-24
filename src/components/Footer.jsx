@@ -20,6 +20,14 @@ export default function Footer() {
       >
         {step === 5 ? "Submit" : "Next"}
       </button>
+      <div className="progressbar flex items-center justify-center ">
+        <span className="progressbar">
+          <span
+            className="subProgressbar"
+            style={{ width: 20 * step + "%" }}
+          ></span>
+        </span>
+      </div>
     </footer>
   );
 }
